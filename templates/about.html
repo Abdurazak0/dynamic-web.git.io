@@ -1,0 +1,65 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="container-fluid hero-header bg-light py-5 mb-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 mb-3 animated slideInDown">About A Hotel</h1>
+                    <nav aria-label="breadcrumb animated slideInDown">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About A Hotel</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <img class="img-fluid animated pulse infinite" style="animation-duration: 3s;" src="{% static 'img/ho1.jpeg' %}" alt="About A Hotel Image">
+                </div>
+            </div>
+        </div>
+    </div>
+  
+   
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="{% static 'img/ho2.jpeg' %}" alt="Hotel Lobby Image">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6">Our Story</h1>
+                        <p class="text-primary fs-5 mb-4">Discover the Journey Behind A Hotel</p>
+                        <p>At A Hotel, our story is one of dedication to providing exceptional hospitality experiences to our guests. From our humble beginnings to becoming a renowned name in the hospitality industry, our commitment to excellence has remained unwavering.</p>
+                        <p>With a focus on personalized service and attention to detail, we strive to create a welcoming and comfortable environment for our guests to relax and enjoy their stay. Whether it's for business or leisure, we aim to exceed expectations and create memorable moments for our guests.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <img class="img-fluid" src="{% static 'img/a.jpeg' %}" alt="Hotel Staff Image">
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h1 class="display-6">Our Team</h1>
+                        <p class="text-primary fs-5 mb-4">Meet the Team Behind A Hotel</p>
+                        <p>Our team at A Hotel is dedicated to providing exceptional service and creating memorable experiences for our guests. From our front desk staff to our housekeeping team, every member plays a vital role in ensuring the comfort and satisfaction of our guests.</p>
+                        <p>We are committed to upholding the highest standards of hospitality and professionalism in everything we do. Whether it's assisting guests with their needs or ensuring the cleanliness and maintenance of our facilities, our team goes above and beyond to exceed expectations.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
